@@ -1,6 +1,6 @@
-The grid system used here is my personel solution with styled components
+The grid system used here
 
-styled components so no css files no className
+https://github.com/dkamine/react-responsive
 
 React
 

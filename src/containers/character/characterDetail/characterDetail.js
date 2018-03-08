@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import styled from 'styled-components';
+import { Row, Col } from 'grid-system-react';
 import { push } from 'react-router-redux';
 
 import { getCharacterDetail } from 'modules/character/actions';
 
-import { Row, Col } from 'components/grid';
 import { Content } from 'components/content';
 
 const Img = styled.img`

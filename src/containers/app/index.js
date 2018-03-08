@@ -1,20 +1,22 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import { Container } from 'grid-system-react';
 
-import { Container } from 'components/grid';
 import {Characters, CharacterDetail } from 'containers/character';
+
+const route = window.location.host === "dkamine.github.io" ? "/react-responsive" : "";
 
 const Routes = [
   {
-    "path": "/",
+    "path": `${route}/`,
     "component": Characters,
   },
   {
-    "path": "/characters",
+    "path": `${route}/characters`,
     "component": Characters,
   },
   {
-    "path": "/character/:id",
+    "path": `${route}/character/:id`,
     "component": CharacterDetail,
   },
 ];

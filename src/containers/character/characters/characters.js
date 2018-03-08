@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { Row, Col } from 'grid-system-react';
 import { push } from 'react-router-redux';
 
 import { getCharacters } from 'modules/character/actions';
 
-import { Row, Col } from 'components/grid';
 import { Content } from 'components/content';
 
 import { Character } from './components';
@@ -56,8 +56,10 @@ function mapStateToProps(state) {
   };
 }
 
+const route = window.location.host === "dkamine.github.io" ? "/react-responsive" : "";
+
 const mapDispatchToProps = dispatch => bindActionCreators({
-  navigateTo: (distination) => push(`/${distination}`),
+  navigateTo: (distination) => push(`${route}/${distination}`),
   characters: () => getCharacters(),
 }, dispatch);
 

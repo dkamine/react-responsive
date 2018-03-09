@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Container } from 'grid-system-react';
 
 import {Characters, CharacterDetail } from 'containers/character';
+import { Container } from 'components/grid';
 
 const route = window.location.host === "dkamine.github.io" ? "/react-responsive" : "";
 

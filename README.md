@@ -1,8 +1,4 @@
-The grid system used here
-
-https://github.com/dkamine/react-responsive
-
-React
+React grid system based on styled components
 
 Redux
 
